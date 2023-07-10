@@ -20,6 +20,7 @@ module.exports = {
         manatee: "#9e9aa8",
         onyx: "#35323e",
         "raisin-black": "#232127",
+        cultured: "#f0f1f6",
       },
     },
   },
