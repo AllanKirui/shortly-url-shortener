@@ -422,6 +422,10 @@ video {
   display: none;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   margin-left: auto;
   margin-right: auto;
@@ -432,6 +436,9 @@ body {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   font-family: Poppins;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(158 154 168 / var(--tw-text-opacity));
 }
 
 *, ::before, ::after {
@@ -595,15 +602,6 @@ body {
 
 .pt-10 {
   padding-top: 2.5rem;
-}
-
-.font-semibold {
-  font-weight: 600;
-}
-
-.text-manatee {
-  --tw-text-opacity: 1;
-  color: rgb(158 154 168 / var(--tw-text-opacity));
 }
 
 .text-white {
