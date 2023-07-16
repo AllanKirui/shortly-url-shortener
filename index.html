@@ -8,5 +8,65 @@
 
     <link rel="stylesheet" href="dist/css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- Header -->
+    <header class="pt-10 pb-6 md:pt-12 md:mb-32">
+      <!-- Navigation -->
+      <nav class="flex justify-between font-semibold text-manatee">
+        <!-- Nav Left Container -->
+        <div class="flex items-center gap-11">
+          <!-- Logo -->
+          <img
+            src="./images/logo.svg"
+            alt="Shortly website logo"
+            width="121"
+            height="33"
+          />
+
+          <!-- Nav Links -->
+          <ul class="hidden md:flex gap-8">
+            <li class="hover:text-raisin-black duration-200">
+              <a href="#">Features</a>
+            </li>
+            <li class="hover:text-raisin-black duration-200">
+              <a href="#">Pricing</a>
+            </li>
+            <li class="hover:text-raisin-black duration-200">
+              <a href="#">Resources</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Nav Right Container -->
+        <div class="flex items-center">
+          <!-- Login and Signup Links -->
+          <ul class="hidden md:flex items-center gap-9">
+            <li class="hover:text-raisin-black duration-200">
+              <a href="#">Login</a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="py-3 px-6 bg-maximum-blue-green hover:bg-opacity-60 text-white rounded-full duration-200"
+                >Signup</a
+              >
+            </li>
+          </ul>
+
+          <!-- Hamburger Button -->
+          <div class="md:hidden">
+            <button
+              id="menu-btn"
+              type="button"
+              class="z-40 block hamburger md:hidden focus:outline-none"
+            >
+              <span class="hamburger-top"></span>
+              <span class="hamburger-middle"></span>
+              <span class="hamburger-bottom"></span>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </body>
 </html>
