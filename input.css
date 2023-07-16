@@ -83,6 +83,12 @@
   }
 }
 
+@layer components {
+  .btn {
+    @apply inline-block py-5 px-10 font-bold text-xl text-white bg-maximum-blue-green hover:bg-opacity-60 rounded-full duration-200;
+  }
+}
+
 /* Hamburger Menu */
 .hamburger {
   position: relative;
