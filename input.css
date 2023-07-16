@@ -4,8 +4,12 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply overflow-x-hidden;
+  }
+
   body {
-    @apply font-poppins bg-white overflow-x-hidden px-6 max-w-6xl mx-auto;
+    @apply font-poppins font-medium bg-white overflow-x-hidden px-6 max-w-6xl mx-auto;
   }
 }
 
