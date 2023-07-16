@@ -580,6 +580,18 @@ nav {
   z-index: 40;
 }
 
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mb-9 {
+  margin-bottom: 2.25rem;
+}
+
 .block {
   display: block;
 }
@@ -590,6 +602,14 @@ nav {
 
 .hidden {
   display: none;
+}
+
+.min-w-\[498px\] {
+  min-width: 498px;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
 }
 
 .items-center {
@@ -635,6 +655,10 @@ nav {
   padding-top: 2.5rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -644,8 +668,25 @@ nav {
   font-weight: 500;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
+.leading-relaxed {
+  line-height: 1.625;
+}
+
+.leading-tight {
+  line-height: 1.25;
+}
+
 .-tracking-\[0\.5px\] {
   letter-spacing: -0.5px;
+}
+
+.text-onyx {
+  --tw-text-opacity: 1;
+  color: rgb(53 50 62 / var(--tw-text-opacity));
 }
 
 .duration-200 {
@@ -771,6 +812,11 @@ nav {
 }
 
 @media (min-width: 768px) {
+  .md\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .md\:mb-20 {
     margin-bottom: 5rem;
   }
@@ -786,10 +832,49 @@ nav {
   .md\:pt-12 {
     padding-top: 3rem;
   }
+
+  .md\:leading-\[1\.18\] {
+    line-height: 1.18;
+  }
+
+  .md\:tracking-\[0\.15px\] {
+    letter-spacing: 0.15px;
+  }
 }
 
 @media (min-width: 976px) {
   .lg\:mb-\[120px\] {
     margin-bottom: 120px;
+  }
+
+  .lg\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:min-w-max {
+    min-width: -moz-max-content;
+    min-width: max-content;
+  }
+
+  .lg\:max-w-xl {
+    max-width: 36rem;
+  }
+
+  .lg\:-translate-y-\[68px\] {
+    --tw-translate-y: -68px;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .lg\:translate-x-\[86px\] {
+    --tw-translate-x: 86px;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .lg\:text-left {
+    text-align: left;
   }
 }
