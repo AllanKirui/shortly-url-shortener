@@ -10,7 +10,7 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="pt-10 pb-6 md:pt-12 md:mb-20 lg:mb-32">
+    <header class="content-wrapped pt-10 pb-6 md:pt-12 md:mb-20 lg:mb-[120px]">
       <!-- Navigation -->
       <nav class="flex justify-between">
         <!-- Nav Left Container -->
@@ -24,7 +24,7 @@
           />
 
           <!-- Nav Links -->
-          <ul class="hidden md:flex gap-8">
+          <ul class="hidden md:flex gap-7">
             <li class="hover:text-raisin-black duration-200">
               <a href="#">Features</a>
             </li>
@@ -40,14 +40,12 @@
         <!-- Nav Right Container -->
         <div class="flex items-center">
           <!-- Login and Signup Links -->
-          <ul class="hidden md:flex items-center gap-9">
+          <ul class="hidden md:flex items-center gap-9 -tracking-[0.5px]">
             <li class="hover:text-raisin-black duration-200">
               <a href="#">Login</a>
             </li>
             <li>
-              <a
-                href="#"
-                class="py-3 px-6 bg-maximum-blue-green hover:bg-opacity-60 text-white rounded-full duration-200"
+              <a href="#" class="btn py-2.5 px-6 text-base font-medium"
                 >Signup</a
               >
             </li>
@@ -58,7 +56,7 @@
             <button
               id="menu-btn"
               type="button"
-              aria-label="Menu Toggle"
+              aria-label="Toggle Mobile Menu"
               class="z-40 block hamburger md:hidden focus:outline-none"
             >
               <span class="hamburger-top"></span>
