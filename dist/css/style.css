@@ -590,6 +590,10 @@ nav {
   margin-bottom: 2.25rem;
 }
 
+.mb-\[168px\] {
+  margin-bottom: 168px;
+}
+
 .block {
   display: block;
 }
@@ -845,6 +849,10 @@ nav {
 @media (min-width: 976px) {
   .lg\:mb-0 {
     margin-bottom: 0px;
+  }
+
+  .lg\:mb-12 {
+    margin-bottom: 3rem;
   }
 
   .lg\:mb-\[120px\] {
