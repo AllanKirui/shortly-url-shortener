@@ -9,7 +9,7 @@
   }
 
   body {
-    @apply font-poppins font-medium bg-white overflow-x-hidden px-6 max-w-6xl mx-auto;
+    @apply font-poppins font-medium bg-white text-manatee overflow-x-hidden px-6 max-w-6xl mx-auto;
   }
 }
 
