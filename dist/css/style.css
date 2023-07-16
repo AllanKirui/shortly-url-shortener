@@ -427,9 +427,6 @@ html {
 }
 
 body {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 72rem;
   overflow-x: hidden;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -439,6 +436,23 @@ body {
   font-weight: 500;
   --tw-text-opacity: 1;
   color: rgb(158 154 168 / var(--tw-text-opacity));
+  font-size: var(--step-0);
+}
+
+h1 {
+  font-size: var(--step-3);
+}
+
+h2 {
+  font-size: var(--step-2);
+}
+
+p {
+  font-size: var(--step-1);
+}
+
+nav {
+  font-size: 1rem;
 }
 
 *, ::before, ::after {
@@ -541,6 +555,27 @@ body {
   --tw-backdrop-sepia:  ;
 }
 
+.btn {
+  display: inline-block;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(42 208 208 / var(--tw-bg-opacity));
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  transition-duration: 200ms;
+}
+
+.btn:hover {
+  --tw-bg-opacity: 0.6;
+}
+
 .z-40 {
   z-index: 40;
 }
@@ -569,21 +604,12 @@ body {
   gap: 2.75rem;
 }
 
-.gap-8 {
-  gap: 2rem;
+.gap-7 {
+  gap: 1.75rem;
 }
 
 .gap-9 {
   gap: 2.25rem;
-}
-
-.rounded-full {
-  border-radius: 9999px;
-}
-
-.bg-maximum-blue-green {
-  --tw-bg-opacity: 1;
-  background-color: rgb(42 208 208 / var(--tw-bg-opacity));
 }
 
 .px-6 {
@@ -591,9 +617,14 @@ body {
   padding-right: 1.5rem;
 }
 
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.py-2\.5 {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
 }
 
 .pb-6 {
@@ -604,13 +635,82 @@ body {
   padding-top: 2.5rem;
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.-tracking-\[0\.5px\] {
+  letter-spacing: -0.5px;
 }
 
 .duration-200 {
   transition-duration: 200ms;
+}
+
+/* Calculate Font Sizes Based on Screen Size */
+
+:root {
+  --fluid-min-width: 375;
+  --fluid-max-width: 1440;
+  --fluid-screen: 100vw;
+  --fluid-bp: calc(
+    (var(--fluid-screen) - var(--fluid-min-width) / 16 * 1rem) /
+      (var(--fluid-max-width) - var(--fluid-min-width))
+  );
+}
+
+/* The Different Ranges of Font Sizes Used */
+
+:root {
+  --f--1-min: 14;
+  --f--1-max: 16;
+  --step--1: calc(
+    ((var(--f--1-min) / 16) * 1rem) + (var(--f--1-max) - var(--f--1-min)) *
+      var(--fluid-bp)
+  );
+  --f-0-min: 16;
+  --f-0-max: 18;
+  --step-0: calc(
+    ((var(--f-0-min) / 16) * 1rem) + (var(--f-0-max) - var(--f-0-min)) *
+      var(--fluid-bp)
+  );
+  --f-1-min: 18;
+  --f-1-max: 22;
+  --step-1: calc(
+    ((var(--f-1-min) / 16) * 1rem) + (var(--f-1-max) - var(--f-1-min)) *
+      var(--fluid-bp)
+  );
+  --f-2-min: 28;
+  --f-2-max: 40;
+  --step-2: calc(
+    ((var(--f-2-min) / 16) * 1rem) + (var(--f-2-max) - var(--f-2-min)) *
+      var(--fluid-bp)
+  );
+  --f-3-min: 40;
+  --f-3-max: 76;
+  --step-3: calc(
+    ((var(--f-3-min) / 16) * 1rem) + (var(--f-3-max) - var(--f-3-min)) *
+      var(--fluid-bp)
+  );
+}
+
+/* Classes For Responsive Fonts */
+
+.text-step--1 {
+  font-size: var(--step--1);
+}
+
+/* Custom Container Styles */
+
+.content-wrapped {
+  max-width: 69.375rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Hamburger Menu */
@@ -660,10 +760,6 @@ body {
   transform: rotate(-45deg) translate(-6px, 6px);
 }
 
-.hover\:bg-opacity-60:hover {
-  --tw-bg-opacity: 0.6;
-}
-
 .hover\:text-raisin-black:hover {
   --tw-text-opacity: 1;
   color: rgb(35 33 39 / var(--tw-text-opacity));
@@ -693,7 +789,7 @@ body {
 }
 
 @media (min-width: 976px) {
-  .lg\:mb-32 {
-    margin-bottom: 8rem;
+  .lg\:mb-\[120px\] {
+    margin-bottom: 120px;
   }
 }
