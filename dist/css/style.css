@@ -430,8 +430,6 @@ body {
   overflow-x: hidden;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
   font-family: Poppins;
   font-weight: 500;
   --tw-text-opacity: 1;
@@ -664,12 +662,12 @@ nav {
   line-height: 1.5rem;
 }
 
-.font-medium {
-  font-weight: 500;
-}
-
 .font-bold {
   font-weight: 700;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .leading-relaxed {
@@ -752,6 +750,8 @@ nav {
   max-width: 69.375rem;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 /* Hamburger Menu */
@@ -843,12 +843,12 @@ nav {
 }
 
 @media (min-width: 976px) {
-  .lg\:mb-\[120px\] {
-    margin-bottom: 120px;
-  }
-
   .lg\:mb-0 {
     margin-bottom: 0px;
+  }
+
+  .lg\:mb-\[120px\] {
+    margin-bottom: 120px;
   }
 
   .lg\:flex {

@@ -59,7 +59,7 @@
   }
 
   body {
-    @apply px-6 font-poppins font-medium bg-white text-manatee overflow-x-hidden;
+    @apply font-poppins font-medium bg-white text-manatee overflow-x-hidden;
   }
 
   body {
@@ -94,6 +94,8 @@
   max-width: 69.375rem;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 /* Hamburger Menu */
