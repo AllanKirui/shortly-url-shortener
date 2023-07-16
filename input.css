@@ -59,7 +59,7 @@
   }
 
   body {
-    @apply font-poppins font-medium bg-white text-manatee overflow-x-hidden px-6 max-w-6xl mx-auto;
+    @apply px-6 font-poppins font-medium bg-white text-manatee overflow-x-hidden;
   }
 
   body {
@@ -85,8 +85,15 @@
 
 @layer components {
   .btn {
-    @apply inline-block py-5 px-10 font-bold text-xl text-white bg-maximum-blue-green hover:bg-opacity-60 rounded-full duration-200;
+    @apply inline-block py-4 px-10 font-bold text-xl text-white bg-maximum-blue-green hover:bg-opacity-60 rounded-full duration-200;
   }
+}
+
+/* Custom Container Styles */
+.content-wrapped {
+  max-width: 69.375rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Hamburger Menu */
