@@ -677,8 +677,8 @@ body {
 }
 
 @media (min-width: 768px) {
-  .md\:mb-32 {
-    margin-bottom: 8rem;
+  .md\:mb-20 {
+    margin-bottom: 5rem;
   }
 
   .md\:flex {
@@ -691,5 +691,11 @@ body {
 
   .md\:pt-12 {
     padding-top: 3rem;
+  }
+}
+
+@media (min-width: 976px) {
+  .lg\:mb-32 {
+    margin-bottom: 8rem;
   }
 }
