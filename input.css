@@ -49,6 +49,10 @@
 }
 
 /* Classes For Responsive Fonts */
+.text-step-0 {
+  font-size: var(--step-0);
+}
+
 .text-step--1 {
   font-size: var(--step--1);
 }
@@ -81,6 +85,7 @@
     letter-spacing: -0.75px;
   }
 
+  h3,
   p {
     font-size: var(--step-1);
   }
@@ -101,8 +106,8 @@
   max-width: 69.375rem;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 /* Hamburger Menu */
