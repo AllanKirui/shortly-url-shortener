@@ -437,12 +437,21 @@ body {
   font-size: var(--step-0);
 }
 
+h1,
+  h2,
+  h3 {
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(53 50 62 / var(--tw-text-opacity));
+}
+
 h1 {
   font-size: var(--step-3);
 }
 
 h2 {
   font-size: var(--step-2);
+  letter-spacing: -0.75px;
 }
 
 p {
@@ -666,10 +675,6 @@ nav {
   line-height: 1.5rem;
 }
 
-.font-bold {
-  font-weight: 700;
-}
-
 .font-medium {
   font-weight: 500;
 }
@@ -684,11 +689,6 @@ nav {
 
 .-tracking-\[0\.5px\] {
   letter-spacing: -0.5px;
-}
-
-.text-onyx {
-  --tw-text-opacity: 1;
-  color: rgb(53 50 62 / var(--tw-text-opacity));
 }
 
 .duration-200 {

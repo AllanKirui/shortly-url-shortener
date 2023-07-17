@@ -66,12 +66,19 @@
     font-size: var(--step-0);
   }
 
+  h1,
+  h2,
+  h3 {
+    @apply font-bold text-onyx;
+  }
+
   h1 {
     font-size: var(--step-3);
   }
 
   h2 {
     font-size: var(--step-2);
+    letter-spacing: -0.75px;
   }
 
   p {
