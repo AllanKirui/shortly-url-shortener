@@ -629,6 +629,10 @@ nav {
   margin-bottom: 2.25rem;
 }
 
+.mb-\[14px\] {
+  margin-bottom: 14px;
+}
+
 .mb-\[168px\] {
   margin-bottom: 168px;
 }
@@ -785,12 +789,20 @@ nav {
   padding-bottom: 1.5rem;
 }
 
+.pb-\[90px\] {
+  padding-bottom: 90px;
+}
+
 .pt-10 {
   padding-top: 2.5rem;
 }
 
 .pt-20 {
   padding-top: 5rem;
+}
+
+.pt-\[98px\] {
+  padding-top: 98px;
 }
 
 .text-center {
@@ -832,6 +844,11 @@ nav {
 
 .tracking-\[0\.4px\] {
   letter-spacing: 0.4px;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .shadow-sm {
@@ -992,6 +1009,22 @@ nav {
   }
 }
 
+/* Custom Styles for Call to Action Section */
+
+.boost-bg-img {
+  background-image: url("../../images/bg-boost-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 976px) {
+  .boost-bg-img {
+    background-image: url("../../images/bg-boost-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
 .hover\:text-raisin-black:hover {
   --tw-text-opacity: 1;
   color: rgb(35 33 39 / var(--tw-text-opacity));
@@ -1103,6 +1136,10 @@ nav {
     margin-bottom: 3rem;
   }
 
+  .lg\:mb-5 {
+    margin-bottom: 1.25rem;
+  }
+
   .lg\:mb-\[120px\] {
     margin-bottom: 120px;
   }
@@ -1155,6 +1192,14 @@ nav {
 
   .lg\:pb-\[208px\] {
     padding-bottom: 208px;
+  }
+
+  .lg\:pb-\[56px\] {
+    padding-bottom: 56px;
+  }
+
+  .lg\:pt-\[60px\] {
+    padding-top: 60px;
   }
 
   .lg\:text-left {
