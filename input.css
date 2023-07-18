@@ -155,3 +155,36 @@
 .open .hamburger-bottom {
   transform: rotate(-45deg) translate(-6px, 6px);
 }
+
+/* Custom Styles for Link Shortener and Stats Section */
+.shorten-bg-img {
+  background-image: url("../../images/bg-shorten-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50px -30px;
+}
+
+.stat-cards li:not(:last-child) {
+  margin-bottom: 5.625rem;
+}
+
+@media (min-width: 976px) {
+  .shorten-bg-img {
+    background-image: url("../../images/bg-shorten-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: unset;
+  }
+
+  .stat-cards li {
+    margin-bottom: 0 !important;
+  }
+
+  .stat-cards li:nth-child(3n + 2) {
+    transform: translateY(44px);
+  }
+
+  .stat-cards li:nth-child(3n + 3) {
+    transform: translateY(88px);
+  }
+}
