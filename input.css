@@ -76,6 +76,10 @@
     @apply font-bold text-onyx;
   }
 
+  h4 {
+    @apply font-bold text-white;
+  }
+
   h1 {
     font-size: var(--step-3);
   }
@@ -202,4 +206,9 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+}
+
+/* Custom Styles for Footer Section */
+.footer-links-wrapper li:not(:last-child) {
+  margin-bottom: 0.75rem;
 }
