@@ -10,7 +10,9 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="content-wrapped pt-10 pb-6 md:pt-12 md:mb-20 lg:mb-[120px]">
+    <header
+      class="content-wrapped relative pt-10 pb-6 md:pt-12 md:mb-20 lg:mb-[120px]"
+    >
       <!-- Navigation -->
       <nav class="flex justify-between">
         <!-- Nav Left Container -->
@@ -66,6 +68,43 @@
           </div>
         </div>
       </nav>
+
+      <!-- Mobile Menu -->
+      <div
+        class="md:hidden absolute left-6 right-6 top-24 py-10 px-6 text-center text-white text-[18px] font-bold bg-night-blue rounded-xl"
+      >
+        <!-- Menu Top -->
+        <div class="mb-[34px]">
+          <!-- Menu Links -->
+          <ul class="flex flex-col gap-8">
+            <li class="hover:text-raisin-black duration-200">
+              <a href="#">Features</a>
+            </li>
+            <li class="hover:text-raisin-black duration-200">
+              <a href="#">Pricing</a>
+            </li>
+            <li class="hover:text-raisin-black duration-200">
+              <a href="#">Resources</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Menu Divider -->
+        <div class="w-full h-[1px] mb-[34px] bg-gray-600"></div>
+
+        <!-- Menu Bottom -->
+        <div>
+          <!-- Login and Signup Links -->
+          <ul class="flex flex-col gap-[26px]">
+            <li class="hover:text-raisin-black duration-200">
+              <a href="#">Login</a>
+            </li>
+            <li>
+              <a href="#" class="btn w-full py-2.5 px-6">Signup</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
 
     <main>
