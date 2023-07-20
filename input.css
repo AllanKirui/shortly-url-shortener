@@ -168,6 +168,10 @@
 }
 
 /* Custom Styles for Link Shortener and Stats Section */
+.shortened-links-wrapper li:not(:last-child) {
+  margin-bottom: 0.875rem;
+}
+
 .shorten-bg-img {
   background-image: url("../../images/bg-shorten-mobile.svg");
   background-repeat: no-repeat;
