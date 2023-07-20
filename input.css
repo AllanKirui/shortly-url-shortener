@@ -28,22 +28,28 @@
     ((var(--f-0-min) / 16) * 1rem) + (var(--f-0-max) - var(--f-0-min)) *
       var(--fluid-bp)
   );
-  --f-1-min: 18;
-  --f-1-max: 22;
+  --f-1-min: 16;
+  --f-1-max: 20;
   --step-1: calc(
-    ((var(--f-1-min) / 16) * 1rem) + (var(--f-1-max) - var(--f-1-min)) *
+    ((var(--f-0-min) / 16) * 1rem) + (var(--f-0-max) - var(--f-0-min)) *
       var(--fluid-bp)
   );
-  --f-2-min: 28;
-  --f-2-max: 40;
+  --f-2-min: 18;
+  --f-2-max: 22;
   --step-2: calc(
     ((var(--f-2-min) / 16) * 1rem) + (var(--f-2-max) - var(--f-2-min)) *
       var(--fluid-bp)
   );
-  --f-3-min: 40;
-  --f-3-max: 76;
+  --f-3-min: 28;
+  --f-3-max: 40;
   --step-3: calc(
     ((var(--f-3-min) / 16) * 1rem) + (var(--f-3-max) - var(--f-3-min)) *
+      var(--fluid-bp)
+  );
+  --f-4-min: 40;
+  --f-4-max: 76;
+  --step-4: calc(
+    ((var(--f-4-min) / 16) * 1rem) + (var(--f-4-max) - var(--f-4-min)) *
       var(--fluid-bp)
   );
 }
@@ -51,6 +57,10 @@
 /* Classes For Responsive Fonts */
 .text-step-0 {
   font-size: var(--step-0);
+}
+
+.text-step-1 {
+  font-size: var(--step-1);
 }
 
 .text-step--1 {
@@ -81,17 +91,17 @@
   }
 
   h1 {
-    font-size: var(--step-3);
+    font-size: var(--step-4);
   }
 
   h2 {
-    font-size: var(--step-2);
+    font-size: var(--step-3);
     letter-spacing: -0.75px;
   }
 
   h3,
   p {
-    font-size: var(--step-1);
+    font-size: var(--step-2);
   }
 
   nav {
