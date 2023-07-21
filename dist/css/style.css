@@ -732,10 +732,6 @@ nav {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.resize {
-  resize: both;
-}
-
 .flex-row-reverse {
   flex-direction: row-reverse;
 }
@@ -1184,6 +1180,11 @@ nav {
   margin-bottom: 0.75rem;
 }
 
+.hover\:text-manatee:hover {
+  --tw-text-opacity: 1;
+  color: rgb(158 154 168 / var(--tw-text-opacity));
+}
+
 .hover\:text-maximum-blue-green:hover {
   --tw-text-opacity: 1;
   color: rgb(42 208 208 / var(--tw-text-opacity));
@@ -1192,11 +1193,6 @@ nav {
 .hover\:text-raisin-black:hover {
   --tw-text-opacity: 1;
   color: rgb(35 33 39 / var(--tw-text-opacity));
-}
-
-.hover\:text-manatee:hover {
-  --tw-text-opacity: 1;
-  color: rgb(158 154 168 / var(--tw-text-opacity));
 }
 
 .focus\:outline-none:focus {
