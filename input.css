@@ -182,6 +182,21 @@
   margin-bottom: 0.875rem;
 }
 
+.slideIn {
+  animation: 0.5s ease-in-out slideIn;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .shorten-bg-img {
   background-image: url("../../images/bg-shorten-mobile.svg");
   background-repeat: no-repeat;
