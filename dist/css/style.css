@@ -1406,6 +1406,14 @@ nav {
     margin-bottom: 5rem;
   }
 
+  .md\:mb-14 {
+    margin-bottom: 3.5rem;
+  }
+
+  .md\:mb-16 {
+    margin-bottom: 4rem;
+  }
+
   .md\:inline {
     display: inline;
   }
