@@ -103,7 +103,8 @@
         @click.outside="open = false"
         x-transition.duration.400ms
         x-transition.scale.origin.top
-        class="hidden md:hidden absolute left-6 right-6 top-24 py-10 px-6 text-center text-white text-[18px] font-bold bg-night-blue rounded-xl z-20"
+        class="md:hidden absolute left-6 right-6 top-24 py-10 px-6 text-center text-white text-[18px] font-bold bg-night-blue rounded-xl z-20"
+        x-bind:class="open ? '' : ' hidden '"
       >
         <!-- Menu Top -->
         <div class="mb-[34px]">
