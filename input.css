@@ -115,6 +115,26 @@
   }
 }
 
+/* Prevent the responsive font-sizes from increasing above the sizes defined below on XL sceens */
+@media (min-width: 1440px) {
+  body {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 76px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  h3,
+  p {
+    font-size: 22px;
+  }
+}
+
 /* Custom Container Styles */
 .content-wrapped {
   max-width: 69.375rem;
