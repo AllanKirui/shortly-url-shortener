@@ -594,6 +594,12 @@ nav {
   background-color: rgb(155 227 226 / var(--tw-bg-opacity));
 }
 
+.btn:focus {
+  --tw-bg-opacity: 1;
+  background-color: rgb(42 208 208 / var(--tw-bg-opacity));
+  outline-color: #9be3e2;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -1395,6 +1401,10 @@ nav {
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.focus\:outline-\[\#9be3e2\]:focus {
+  outline-color: #9be3e2;
 }
 
 @media (min-width: 768px) {
