@@ -111,7 +111,7 @@
 
 @layer components {
   .btn {
-    @apply inline-block py-4 px-10 font-bold text-xl text-white bg-maximum-blue-green hover:bg-[#9be3e2] rounded-full duration-200 shadow-sm;
+    @apply inline-block py-4 px-10 font-bold text-xl text-white bg-maximum-blue-green hover:bg-[#9be3e2] focus:bg-[#2ad0d0] focus:outline-[#9be3e2] rounded-full duration-200 shadow-sm;
   }
 }
 
