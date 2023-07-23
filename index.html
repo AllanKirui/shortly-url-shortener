@@ -2,6 +2,7 @@
 <html
   lang="en"
   x-data="{ open: false, error: false, message: '', isLoading: false, shortenedLinks: [] }"
+  x-init="closeMenuOnLargeScreens($data)"
   x-bind:class="open ? 'overflow-y-hidden' : ''"
 >
   <head>
@@ -607,6 +608,20 @@
 
     <!-- Script -->
     <script>
+      /*
+        close the mobile menu when the browser is resized to a size above 768px
+      */
+      const closeMenuOnLargeScreens = (data) => {
+        window.addEventListener("resize", (e) => {
+          let screenWidth = e.target.innerWidth;
+
+          if (screenWidth > 768) data.open = false;
+        });
+      };
+
+      /*
+        functions for link shortener section
+      */
       const shortenLink = async (linkInputEl, data) => {
         let enteredLink = linkInputEl.value;
 
