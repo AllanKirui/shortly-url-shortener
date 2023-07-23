@@ -801,6 +801,10 @@ nav {
   animation: spin 1s linear infinite;
 }
 
+.resize {
+  resize: both;
+}
+
 .flex-row-reverse {
   flex-direction: row-reverse;
 }
